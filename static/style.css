@@ -1,0 +1,126 @@
+:root {
+    /* Extra Small Devices (Phones) - 320px */
+     /* Styles for devices 320px and wider */
+    --media-mobile-sm: 20em; 
+    /* Small Devices (Large Phones) - 480px */
+    /* Styles for devices 480px and wider */
+    --media-mobile-l: 30em;
+    /* Medium Devices (Tablets) - 768px */
+    /* Styles for devices 768px and wider */
+    --media-tablet: 48em;
+    /* Large Devices (Desktops) - 1024px */
+    /* Styles for devices 1024px and wider */
+    --media-desktop-l: 64em; 
+    /* Extra Large Devices (Large Desktops) - 1200px */
+    /* Styles for devices 1200px and wider */
+    --media-desktop-xl: 75em; 
+    /* Ultra-Wide Devices - 1440px */
+    /* Styles for devices 1440px and wider */
+    --media-desktop-ultra: 90em; 
+
+    /* font-size desktop*/
+    --h1-D-fs-CommonsBold: 80px;
+    --h1-D-fs-GTAlpina: 85px;
+    --h2-D-fs-CommonsBold: 40px;
+    --h2-D-fs-GTAlpina: 46px;
+    --h3-D-fs-CommonsBold: 34px;
+    --h3-D-fs-GTAlpina: 36px;
+    --h4-D-fs-CommonsBold: 28px;
+    --h4-D-fs-GTAlpina: 29px;
+    --bodyD-fs-large-Commons: 23px; /* BODY LARGE */
+    --bodyD-fs-normal-Commons: 19px; /* BODY NORMAL */
+    --bodyD-fs-normal-CommonsBold: 19px; /* BODY NORMAL */
+    --bodyD-fs-samll-Commons: 17px; /* BODY small */
+    --bodyD-fs-small-CommonsBold: 17px; /* BODY small */
+    --labelD-fs-text: 15px; 
+
+    /* line-height desktop */
+    --h1-D-lh-CommonsBold: 80px;
+    --h1-D-lh-GTAlpina: 80px;
+    --h2-D-lh-CommonsBold: 48px;
+    --h2-D-lh-GTAlpina: 48px;
+    --h3-D-lh-CommonsBold: 40px;
+    --h3-D-lh-GTAlpina: 40px;
+    --h4-D-lh-CommonsBold: 32px;
+    --h4-D-lh-GTAlpina: 32px;
+    --bodyD-lh-large-Commons: 32px; /* BODY LARGE */
+    --bodyD-lh-normal-Commons: 24px; /* BODY NORMAL */
+    --bodyD-lh-normal-CommonsBold: 24px; /* BODY NORMAL */
+    --bodyD-lh-small-Commons: 20px; /* BODY small */
+    --bodyD-lh-small-CommonsBold: 20px; /* BODY small */
+    --labelD-lh-text: 16px; 
+
+    /* letter-spacing desktop */
+    --h1-D-ls-commonsBold: -4%;
+    --h1-D-ls-GTAlpina: -4%;
+    --h2-D-ls-commonsBold: -3%;
+    --h2-D-ls-GTAlpina: -3%;
+    --h3-D-ls-commonsBold: -2%;
+    --h3-D-ls-GTAlpina: -3%;
+    --h4-D-ls-commonsBold: -2%;
+    --h4-D-ls-GTAlpina: -2%;
+    --bodyD-ls-large-commons: 0%; /* BODY LARGE */
+    --bodyD-ls-normal-commons: 0%; /* BODY NORMAL */
+    --bodyD-ls-normal-commonsBold: 0%; /* BODY NORMAL */
+    --bodyD-ls-small-Normal: 0%; /* BODY small */
+    --bodyD-ls-small-commonsBold: 0%; /* BODY small */
+    --labelD-ls-text: 2%; 
+
+
+    /* font-size mobile */
+    --h1-M-fs-CommonsBold: 48px;
+    --h1-M-fs-GTAlpina: 50px;
+    --h2-M-fs-CommonsBold: 36px;
+    --h2-M-fs-GTAlpina: 38px;
+    --h3-M-fs-CommonsBold: 28px;
+    --h3-M-fs-GTAlpina: 30px;
+    --h4-M-fs-CommonsBold: 23px;
+    --h4-M-fs-GTAlpina: 24px;
+    --bodyM-fs-large-Commons: 21px; /* BODY LARGE */
+    --bodyM-fs-normal-Commons: 17px; /* BODY NORMAL */
+    --bodyM-fs-normal-CommonsBold: 17px; /* BODY NORMAL */
+    --bodyM-fs-samll-Commons: 16px; /* BODY small */
+    --bodyM-fs-small-CommonsBold: 16px; /* BODY small */
+    --labelM-fs-text: 14px; 
+    
+     /* line-height mobile */
+    --h1-M-lh-CommonsBold: 48px;
+    --h1-M-lh-GTAlpina: 48px;
+    --h2-M-lh-CommonsBold: 40px;
+    --h2-M-lh-GTAlpina: 40px;
+    --h3-M-lh-CommonsBold: 32px;
+    --h3-M-lh-GTAlpina: 32px;
+    --h4-M-lh-CommonsBold: 24px;
+    --h4-M-lh-GTAlpina: 24px;
+    --bodyM-lh-large-Commons: 24px; /* BODY LARGE */
+    --bodyM-lh-normal-Commons: 24px; /* BODY NORMAL */
+    --bodyM-lh-normal-CommonsBold: 24px; /* BODY NORMAL */
+    --bodyM-lh-small-Commons: 20px; /* BODY small */
+    --bodyM-lh-small-CommonsBold: 20px; /* BODY small */
+    --labelM-lh-text: 16px; 
+
+    /* letter-spacing mobile */
+    --h1-M-ls-commonsBold: -3%;
+    --h1-M-ls-GTAlpina: -4%;
+    --h2-M-ls-commonsBold: -2%;
+    --h2-M-ls-GTAlpina: -3%;
+    --h3-M-ls-commonsBold: -2%;
+    --h3-M-ls-GTAlpina: -3%;
+    --h4-M-ls-commonsBold: -2%;
+    --h4-M-ls-GTAlpina: -2%;
+    --bodyM-ls-large-commons: 0%; /* BODY LARGE */
+    --bodyM-ls-normal-commons: 0%; /* BODY NORMAL */
+    --bodyM-ls-normal-commonsBold: 0%; /* BODY NORMAL */
+    --bodyM-ls-small-Normal: 0%; /* BODY small */
+    --bodyM-ls-small-commonsBold: 0%; /* BODY small */
+    --labelM-ls-text: 2%; 
+
+    /* color */
+    --neutrals-color-zwart: #1B2426;
+    --neutrals-color-wit: #FFFFFF;
+    --neutrals-color-lichtgrijs: #E6DAF2;
+    --neutrals-color-wittinted:#FFFCFA;
+    --main-color-groengrijs: #39494D;
+    --main-color-oranjerood: #BF564D;
+    --pastels
+}
