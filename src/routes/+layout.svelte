@@ -1,5 +1,14 @@
 <script>
-    import Title from '../src/lib/atoms/title.svelte';
+    import Title from "../lib/molecules/title.svelte";
+    import Anchor from "../lib/atoms/anchor-button.svelte";
+    import Card from "../lib/molecules/card.svelte";
 </script>
 
-<Title />
+<main>
+    <Title />
+    <Anchor />
+    <Card />
+</main>
+
+<style>
+</style>
