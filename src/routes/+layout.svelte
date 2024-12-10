@@ -5,9 +5,11 @@
 </script>
 
 <main>
+    <slot />
     <Title />
     <Anchor />
     <Card />
+    
 </main>
 
 <style>

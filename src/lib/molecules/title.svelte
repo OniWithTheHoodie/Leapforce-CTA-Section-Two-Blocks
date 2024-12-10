@@ -17,8 +17,4 @@
         line-height: var(--h1-M-lh-CommonsBold);
         letter-spacing: var(--h1-M-ls-commonsBold);
     }
-
-    p {
-
-    }
 </style>
