@@ -9,13 +9,15 @@
 
     button {
         background: none;
-        width: 55px;
-        height: 45px;
-        border: 1px solid white;
+        width: 60px;
+        height: 60px;
+        border: 2px solid var(--opacity-color-wit30);
         border-radius: 0.5em;
+        grid-column: 2 / 3;
+        grid-row: 2  / 3;
     }
 
     button:hover {
-        /* background-color: white; */
+        background-color: var(--neutrals-color-wittinted);
     }
 </style>

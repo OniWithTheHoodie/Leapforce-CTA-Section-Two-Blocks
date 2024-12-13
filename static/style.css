@@ -66,7 +66,7 @@
     --bodyD-ls-small-commonsBold: 0%; /* BODY small */
     --labelD-ls-text: 2%; 
 
-
+    /* mobiel */
     /* font-size mobile */
     --h1-M-fs-CommonsBold: 48px;
     --h1-M-fs-GTAlpina: 50px;
@@ -115,12 +115,39 @@
     --bodyM-ls-small-commonsBold: 0%; /* BODY small */
     --labelM-ls-text: 2%; 
 
-    /* color */
+    /* COLORS */
+    /* neutrals */
     --neutrals-color-zwart: #1B2426;
     --neutrals-color-wit: #FFFFFF;
     --neutrals-color-lichtgrijs: #E6DAF2;
     --neutrals-color-wittinted:#FFFCFA;
     --main-color-groengrijs: #39494D;
     --main-color-oranjerood: #BF564D;
-    --pastels
+    /* pastels */
+    --pastels-color-perzik: #F2D6C2;
+    --pastels-color-amber: #FFDFB2;
+    --pastels-color-zand: #D9D0C4;
+    --pastels-color-salie: #BBCCC9;
+    --pastels-color-lavendel: #E6DAF2;
+    --functional-color-steenrood: #BE3E13;
+    --functional-color-geel: #F2B661;
+    --functional-color-olijf: #6D8D4E;
+    /* opacity */
+    --opacity-color-zwart80: rgba(27, 36, 38, 0.8); /* opacity 80% */
+    --opacity-color-zwart50: rgba(27, 36, 38, 0.5); /* opacity 50% */
+    --opacity-color-zwart30: rgba(27, 36, 38, 0.3); /* opacity 30%*/
+    --opacity-color-zwart10: rgba(27, 36, 38, 0.1); /* opacity 10%*/
+    --opacity-color-wit80: rgba(255, 255, 255, 0.8); /* opacity 80% */
+    --opacity-color-wit50: rgba(255, 255, 255, 0.5); /* opacity 50% */
+    --opacity-color-wit30: rgba(255, 255, 255, 0.3); /* opacity 30% */
+    --opacity-color-wit10: rgba(255, 255, 255, 0.1); /* opacity 10% */
+    /* interactive */
+    --interactive-color-hover-oranjerood: #A6433A;
+    --interactive-color-focussed-oranjerood: #59201B;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
