@@ -3,15 +3,16 @@
     import Title from "../lib/molecules/title.svelte";
     import Anchor from "../lib/atoms/anchor-button.svelte";
     import Card from "../lib/molecules/card.svelte";
+    import Block from "../lib/organism/blockCTA.svelte";
 </script>
 
 <main>
     <slot />
-    <Nav />
+    <!-- <Nav />
     <Title />
     <Anchor />
-    <Card />
-    
+    <Card /> -->
+    <Block />
 </main>
 
 <style>

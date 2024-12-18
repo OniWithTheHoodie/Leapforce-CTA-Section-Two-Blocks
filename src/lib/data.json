@@ -1,7 +1,13 @@
 {
+  "label": {
+    "label": "label"
+  },
     "article": {
       "h2": "Mandatory title about the call-to-action here",
       "p": "Optional body copy goes here."
+    },
+    "button": {
+      "button": "Optional button"
     },
     "cards": [
       {

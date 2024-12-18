@@ -1,15 +1,9 @@
 <script>
     import { onMount } from "svelte";
+    import data from "$lib/data.json";
     import Cbutton from "../atoms/card-button.svelte";
     
-    let cards = [];
-
-    //ophalen van JSON-gegevens
-    onMount(async () => {
-        const response = await fetch("/content.json");
-        const data = await response.json();
-        cards = [...data.cards]; // Nieuwe referentie aanmaken
-    });
+    let cards = data.cards;
 </script>
 
 

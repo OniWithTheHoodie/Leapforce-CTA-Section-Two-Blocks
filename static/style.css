@@ -151,3 +151,16 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* FONT */
+@font-face {
+    font-family: "CommonsDemiBold";
+    src: url("/fonts/_fonts/TT Commons Pro DemiBold.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CommonsNormal";
+    src: url("/fonts/_fonts/TT Commons Pro Normal.otf") format("opentype");
+    font-style: normal;
+}

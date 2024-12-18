@@ -1,67 +1,7 @@
 <script>
-    import { onMount, afterUpdate } from "svelte";
-
     let menuOpen = false;
-    let article = { h2: "", p: "" };
-    let cards = [];
-
-    // Ophalen van gegevens uit localStorage
-    onMount(() => {
-        const storedArticle = localStorage.getItem("article");
-        const storedCards = localStorage.getItem("cards");
-
-        if (storedArticle && storedCards) {
-            article = JSON.parse(storedArticle);
-            cards = JSON.parse(storedCards);
-        } else {
-            fetchData();
-        }
-    });
-
-    async function fetchData() {
-        const response = await fetch("/content.json");
-        const data = await response.json();
-        article = { ...data.article }; // Nieuwe referentie aanmaken
-        cards = [...data.cards]; // Nieuwe array aanmaken
-
-        // Opslaan in localStorage
-        localStorage.setItem("article", JSON.stringify(article));
-        localStorage.setItem("cards", JSON.stringify(cards));
-    }
-
-    function saveToLocalStorage() {
-        localStorage.setItem("article", JSON.stringify(article));
-        localStorage.setItem("cards", JSON.stringify(cards));
-        alert("Content opgeslagen in localStorage!");
-    }
-
-    async function updateContent() {
-        const updatedContent = { article, cards };
-        await fetch("http://localhost:3000/update-content", {
-            method: "POST",
-            headers: { "Content-type": "application/json" },
-            body: JSON.stringify(updatedContent),
-        });
-        alert("Content updated!");
-
-        // Update de gegevens opnieuw in de UI na het opslaan
-        const response = await fetch("/content.json");
-        const data = await response.json();
-        article = { ...data.article };
-        cards = [...data.cards];
-    }
-
-    afterUpdate(() => {
-        console.log("Data updated", { article, cards });
-    });
-
-    function forceUpdateArticle() {
-        article = { ...article }; // Nieuwe referentie
-    }
-
-    function forceUpdateCard(index) {
-        cards = cards.map((card, i) => (i === index ? { ...card } : card));
-    }
+    import { onMount, afterUpdate } from "svelte";
+    import data from "$lib/data.json";
 </script>
 
 
@@ -78,26 +18,24 @@
                 <img src="hamburger.svg" alt="hamburger menu" />
             </label>
             {#if menuOpen}
-            <form class="hidden-menu" on:submit|preventDefault={saveToLocalStorage}>
+            <form class="hidden-menu">
                 <h3>Pas het artikel aan</h3>
                 <label>Artikel kop:
-                    <input type="text" bind:value={article.h2} on:input={forceUpdateArticle} />
+                    <input type="text" placeholder="Verander Kop" bind:value={article.h2}/>
                 </label>
                 <label>Artikel tekst:
-                    <input type="text" bind:value={article.p} on:input={forceUpdateArticle} />
+                    <input type="text" placeholder="Verander tekst" bind:value={article.p}/>
                 </label>
             
                 <h3>Pas de kaarten aan</h3>
-                {#each cards as card, i}
-                    <label>Kaart {i + 1} kop:
-                        <input type="text" bind:value={card.header} on:input={() => forceUpdateCard(i)} />
+                {#each cards as card}
+                    <label>Kaart kop:
+                        <input type="text" placeholder="Verander Kop" bind:value={card.header} />
                     </label>
-                    <label>Kaart {i + 1} tekst:
-                        <input type="text" bind:value={card.text} on:input={() => forceUpdateCard(i)} />
+                    <label>Kaart tekst:
+                        <input type="text" placeholder="Verander tekst" bind:value={card.text}/>
                     </label>
                 {/each}
-            
-                <button type="submit">Opslaan</button>
             </form>
             {/if}
         </li>

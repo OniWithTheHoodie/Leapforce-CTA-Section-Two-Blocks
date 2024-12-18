@@ -18,6 +18,10 @@
     }
 
     button:hover {
-        background-color: var(--neutrals-color-wittinted);
+        border: 1px solid var(--opacity-color-zwart50);
+    }
+
+    button:focus {
+        border: 1px solid var(--opacity-color-zwart80);
     }
 </style>

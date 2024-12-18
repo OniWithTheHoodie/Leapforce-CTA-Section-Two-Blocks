@@ -1,14 +1,8 @@
 <script>
-    import {onMount} from "svelte";
+    import { onMount } from "svelte";
+    import data from "$lib/data.json";
 
-    let article = { h2: "", p:"" };
-
-    //Ophalen van JSON-gegevens
-    onMount(async () => {
-        const response = await  fetch("/content.json");
-        const data = await response.json();
-        article = data.article;
-    });
+    let article = data.article;
 </script>
 
 <article>
