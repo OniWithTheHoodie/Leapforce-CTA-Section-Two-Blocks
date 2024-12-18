@@ -60,6 +60,9 @@ We maken onze websites zonder hard coded teksten. Alles moet door een marketeer 
 
 [x] Constraints voor de input van de marketeer
 
+![image](https://github.com/user-attachments/assets/884a18bf-d378-44f5-9244-7c607ddd63cf)
+
+
 ## Wat ik verder nog wil doen ?
 
 * Grid layout voor desktop verder uitwerken.
