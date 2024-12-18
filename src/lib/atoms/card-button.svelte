@@ -15,6 +15,7 @@
         border-radius: 0.5em;
         grid-column: 2 / 3;
         grid-row: 2  / 3;
+        cursor: pointer;
     }
 
     button:hover {

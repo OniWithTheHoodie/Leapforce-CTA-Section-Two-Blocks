@@ -52,7 +52,7 @@
                                 </div> 
                             </label>
                         </div>
-                        <input type="text" placeholder="Change label" bind:value={label.label}/>
+                        <input type="text" maxlength="40" placeholder="Change label" bind:value={label.label}/>
                         <div class="grouped-label">
                             <h3>Change the article</h3>
                             <label>Article header 
@@ -60,14 +60,14 @@
                                 <div class="tooltip">Please enter a concise header. Recommended length: 30-50 characters.</div>
                             </label>
                         </div>
-                        <input type="text" placeholder="Change header" bind:value={article.h2}/>
+                        <input type="text" maxlength="50" placeholder="Change header" bind:value={article.h2}/>
                         <div class="grouped-label">
                             <label>Article text
                                 <div class="tooltip-wrapper"><Question />
                                 <div class="tooltip">The article text should provide a detailed description. Aim for 100-150 words.</div>
                             </label>
                         </div>
-                        <input type="text" placeholder="Change text" bind:value={article.p}/>
+                        <input type="text" maxlength="150" placeholder="Change text" bind:value={article.p}/>
                         <div class="grouped-label">
                         <h3>Change the button</h3>
                         <label>Button 
@@ -75,7 +75,7 @@
                             <div class="tooltip">Use concise action verbs. Limit the text to 2-4 words.</div>
                             </label>
                         </div>
-                        <input type="text" placeholder="Verander button" bind:value={button.button}/>
+                        <input type="text" maxlength="30" placeholder="Verander button" bind:value={button.button}/>
 
                         <h3>Change the cards</h3>
                         {#each cards as card}
@@ -85,14 +85,14 @@
                                 <div class="tooltip">Keep the title concise and descriptive. Recommended length: 5-7 words (max 50 characters).</div>
                             </label>
                             </div>
-                            <input type="text" placeholder="Chage title" bind:value={card.header} />
+                            <input type="text" maxlength="100" placeholder="Chage title" bind:value={card.header} />
                         <div class="grouped-label">
                             <label>Card text 
                                 <div class="tooltip-wrapper"><Question />
                                 <div class="tooltip">The article text should provide a detailed description. Aim for 100-150 words.</div>
                             </label>
                         </div>
-                        <input type="text" placeholder="Change text" bind:value={card.text}/>
+                        <input type="text" maxlength="255" placeholder="Change text" bind:value={card.text}/>
                         <div class="grouped-label">
                             <label>Change image 
                                 <div class="tooltip-wrapper"><Question />
