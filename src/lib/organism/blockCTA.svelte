@@ -1,5 +1,5 @@
 <script>
-    import { onMount} from "svelte";
+    import { onMount } from "svelte";
     import data from "$lib/data.json";
     import Cbutton from "../atoms/card-button.svelte";
     import Anchor from "../atoms/anchor-button.svelte";
@@ -137,12 +137,10 @@
         display: grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-rows: auto;
-        gap: 12px;
         margin: 20px;
         justify-items: center;
 
         @media only screen and (min-width: 64em){
-            gap: 24px;
             margin: 64px;
         }
     }
@@ -167,13 +165,16 @@
         list-style-type: none;
     }
 
+    .center-label {
+        grid-column: 3 / 5;
+        justify-self: center;
+        padding-bottom: 8px;
+        color: var(--neutrals-color-plain-black);
+    }
+
     .hamburger {
         grid-column: 6 / 7;
         grid-row: 1 / 2;
-    }
-
-    .center-label {
-        grid-column: 3 / 5;
     }
 
     .hamburger img {
@@ -223,15 +224,12 @@
         font-size: 1rem;
         display: flex;
         flex-direction: row;
-        gap: 0.5em;
         /* grid-column: 3 / 5; */
     }
 
     /* HEADER */
     .header {
-        /* display: flex; */
         flex-direction: column;
-        /* align-items: center; */
         display: grid;
         grid-column: 1 / 7;
         grid-row: 2 / 5;
@@ -246,6 +244,7 @@
         letter-spacing: var(--h2-M-ls-commonsBold);
         grid-column: 2 / 6;
         grid-column: 2 / 4;
+        padding-bottom: 24px;
 
         @media only screen and (min-width: 48em){
             font-size: var(--h2-D-fs-CommonsBold);
@@ -263,8 +262,12 @@
         font-size: var(--bodyM-fs-normal-Commons);
         line-height: var(--bodyM-lh-normal-Commons);
         letter-spacing: var(--bodyM-ls-normal-commons);
+        color: var(--neutrals-color-plain-black);
         grid-column: 2 / 6;
         grid-row: 4 / 5;
+        padding-bottom: 24px;
+
+        
 
         @media only screen and (min-width: 48em){
             font-size: var(--bodyD-fs-normal-Commons);
@@ -350,7 +353,7 @@
 
     .container {
         position: absolute;
-        top: 7em;
+        top: 6em;
         display: grid;
         grid-template-columns: 180px 60px;
         grid-template-rows: 60px 60px;
@@ -370,17 +373,17 @@
 
         @media only screen and (min-width: 64em){
             grid-template-columns: 335px 60px;
-            top: 23em;
+            top: 22em;
         }
 
         @media only screen and (min-width: 75em){
             grid-template-columns: 430px 60px;
-            top: 23em;
+            top: 22em;
         }
 
         @media only screen and (min-width: 90em){
-            grid-template-columns: 530px 60px;
-            top: 23em;
+            grid-template-columns: 508px 60px;
+            top: 22em;
         }
     }
 

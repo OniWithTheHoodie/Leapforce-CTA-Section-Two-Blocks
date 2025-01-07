@@ -12,6 +12,7 @@
         text-decoration: none;
         display: flex;
         gap: 0.5em;
+        padding-bottom: 24px;
         justify-content: center;
         align-items: center;
         margin-bottom: 1em;
