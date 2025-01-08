@@ -10,7 +10,11 @@ Daarnaast heb ik een hamburger-menu geïmplementeerd dat gebruikers opties biedt
 
 De site heb ik online gepubliceerd met vercel.
 
-![Schermafbeelding 2024-12-18 224827](https://github.com/user-attachments/assets/b8f2c976-d5bb-46b9-baee-0974f55d503d)
+![Schermafbeelding 2025-01-08 232145](https://github.com/user-attachments/assets/1087d9df-c4b7-41bc-945e-b6ee93e3d366)
+
+
+![Schermafbeelding 2025-01-08 232215](https://github.com/user-attachments/assets/1caec9f1-ed5a-4126-835c-6772cbabdfd0)
+
 
 https://leapforce-cta-section-two-blocks.vercel.app/
 
