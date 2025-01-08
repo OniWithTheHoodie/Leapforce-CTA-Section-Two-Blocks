@@ -225,6 +225,7 @@
         display: flex;
         flex-direction: row;
         /* grid-column: 3 / 5; */
+        gap: 1em;
     }
 
     /* HEADER */
@@ -460,7 +461,7 @@
         display: none;
         position: absolute;
         top: 0;
-        left: 8.6em;
+        left: 7.6em;
         width: auto;
         max-width: 250px;
         min-width: 100px;
